@@ -100,6 +100,7 @@ header {
 
 .burguerButton{
     cursor: pointer;
+    visibility: hidden;
     margin-right: 1rem;
 }
 
@@ -115,6 +116,7 @@ header {
     font-weight: bold;
     font-size: 2.2rem;
     color: var(--darkGrayishBlue);
+    visibility: hidden;
 }
 
 .hideMenuModalImg{
@@ -758,10 +760,33 @@ header {
 
     .photosMenu{
         position: absolute;
+        flex-direction: column;
     }
 
     .productArea{
         width: 100%;
+    }
+
+    .burguerButton{
+        visibility: visible;
+    }
+
+    .hideMenuModalButton{
+        visibility: visible;
+    }
+
+    .shoppingArea{
+        flex-flow: column nowrap;
+    }
+
+    .productQuantityArea{
+        width: 90%;
+    }
+
+    .addToCartButton{
+        height: 5rem;
+        width: 90%;
+        margin-top: 2rem;
     }
 }
 
