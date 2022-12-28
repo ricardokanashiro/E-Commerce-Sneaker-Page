@@ -725,6 +725,10 @@ header {
         position: static;
     }
 
+    .userCart a{
+        position: relative;
+    }
+
     .cartProductsModal{
         width: 80%;
         height: 25rem;
@@ -737,6 +741,8 @@ header {
 
     main{
         width: 100%;
+        height: 83rem;
+        align-items: flex-start;
     }
 
     .logoNavWrapper{
@@ -765,6 +771,8 @@ header {
 
     .productArea{
         width: 100%;
+        margin-top: 0;
+        align-items: flex-start;
     }
 
     .burguerButton{
@@ -775,18 +783,55 @@ header {
         visibility: visible;
     }
 
+    .productName{
+        font-size: 2.6rem;
+        margin-bottom: 2.2rem;
+    }
+
+    .productDescription{
+        font-size: 1.3rem;
+    }
+
+    .productPriceArea{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 3rem;
+    }
+
+    .currentProductPrice{
+        margin-bottom: 0;
+    }
+
+    .oldPrice{
+        margin-bottom: 0;
+    }
+
     .shoppingArea{
         flex-flow: column nowrap;
+        align-items: center;
     }
 
     .productQuantityArea{
-        width: 90%;
+        width: 95%;
     }
 
     .addToCartButton{
         height: 5rem;
-        width: 90%;
+        width: 95%;
         margin-top: 2rem;
+    }
+
+    .mainPhoto{
+        align-self: flex-start;
+    }
+
+    .mainImg{
+        border-radius: 0;
+    }
+
+    .productInfo{
+        padding: 0 2rem;
     }
 }
 
