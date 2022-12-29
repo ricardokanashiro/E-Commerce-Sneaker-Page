@@ -16,6 +16,55 @@ function handleChangeImage(eventInfo) {
     mainImg.setAttribute('src', imgAddress + '.jpg');
 }
 
+// Change Product Image Mobile Function:
+
+const mainImageArrow = document.querySelectorAll('.mainImageArrow');
+let imagePositionCounter = 0;
+let hasActiveStatement = false;
+
+mainImageArrow.forEach(arrow => arrow.addEventListener(
+    'click', (eventInfo) => handleChangeMobileProductImage(eventInfo)
+));
+
+function handleChangeMobileProductImage(eventInfo) {
+
+    if(eventInfo.target.dataset.side === 'left') {
+
+        if(imagePositionCounter != 0){
+            --imagePositionCounter;
+            let currentMobileImageWrapper = productPhotos[imagePositionCounter];
+            let currentMobileThumbnailAddress = currentMobileImageWrapper.querySelector('img').getAttribute('src');
+            let currentMobileImageAddress = currentMobileThumbnailAddress.substring(0, currentMobileThumbnailAddress.indexOf('-thumbnail'))
+            mainImg.setAttribute('src', currentMobileImageAddress + '.jpg');
+        }
+        
+        if(imagePositionCounter === 0){
+            eventInfo.target.classList.add('activeArrowButton');
+        }
+
+        if(imagePositionCounter === 2) {
+            mainImageArrow[1].classList.remove('activeArrowButton');
+        }
+
+    } else if(eventInfo.target.dataset.side === 'right'){
+        if(imagePositionCounter <= 2){
+            ++imagePositionCounter;
+            let currentMobileImageWrapper = productPhotos[imagePositionCounter];
+            let currentMobileThumbnailAddress = currentMobileImageWrapper.querySelector('img').getAttribute('src');
+            let currentMobileImageAddress = currentMobileThumbnailAddress.substring(0, currentMobileThumbnailAddress.indexOf('-thumbnail'))
+            mainImg.setAttribute('src', currentMobileImageAddress + '.jpg');
+        }
+
+        if(imagePositionCounter === 3){
+            eventInfo.target.classList.add('activeArrowButton');
+        }
+
+        if(imagePositionCounter === 1) {
+            mainImageArrow[0].classList.remove('activeArrowButton');
+        }
+    }
+}
+
 // Change Product Quantity Function:
 
 const decreaseQuantityButton = document.querySelector('.decreaseAmount');
@@ -41,7 +90,6 @@ const userCart = document.querySelector('.userCart');
 const cartProductsModal = document.querySelector('.cartProductsModal');
 
 userCart.addEventListener('click', () => {
-
     cartProductsModal.classList.toggle('active');
 });
 

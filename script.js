@@ -88,3 +88,4 @@ function construirObjeto(propriedade, metodo) {
 }
 
 const novoObjeto = new construirObjeto('Uma propriedade', () => console.log('É um método!'));
+

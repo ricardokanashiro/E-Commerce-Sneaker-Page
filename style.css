@@ -739,6 +739,19 @@ header {
 
 @media(max-width:768px){
 
+    .mainPage{
+        grid-template-rows: 7rem 1fr;
+    }
+
+    .burguerButton img{
+        height: 1.5rem;
+        margin-bottom: -.3rem;
+    }
+
+    .logo{
+        height: 1.8rem;
+    }
+
     main{
         width: 100%;
         height: 83rem;
@@ -747,14 +760,20 @@ header {
 
     .logoNavWrapper{
         gap: 1rem;
+        margin-left: 1.8rem;
     }
 
-    .logoNavWrapper{
-        margin-left: .5rem;
+    .userCart img{
+        height: 1.8rem;
+    }
+
+    .userProfile img{
+        height: 3.2rem;
     }
 
     .userAccess{
-        margin-right: .5rem;
+        margin-right: 1.8rem;
+        gap: 2rem;
     }
 
     .cartProductsModal{
@@ -852,4 +871,8 @@ header {
 
 .menuModalBlurActive{
     visibility: visible;
+}
+
+.activeArrowButton{
+    opacity: .5;
 }
