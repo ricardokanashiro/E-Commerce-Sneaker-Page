@@ -1,3 +1,5 @@
+const body = document.querySelector('body');
+
 // Change Product Main Image Function:
 
 const mainImg = document.querySelector('.mainImg');
@@ -139,4 +141,59 @@ function handleDeleteProductInCart() {
 
     cartEmpty.classList.add('active');
     cartItemsCounter.classList.remove('active');
+}
+
+// Toggle Menu Function:
+
+const burguerButton = document.querySelector('.burguerButton');
+const mobileMenu = document.querySelector('.headerNavbar');
+const menuModalBlur = document.querySelector('.menuModalBlur');
+const hideMenuModalButton = document.querySelector('.hideMenuModalButton');
+
+burguerButton.addEventListener('click', (eventInfo) => handleShowMenu(eventInfo));
+hideMenuModalButton.addEventListener('click', (eventInfo) => handleHideMenu(eventInfo));
+
+function handleShowMenu() {
+    mobileMenu.classList.add('activeMobileMenu');
+    menuModalBlur.classList.add('menuModalBlurActive');
+    body.classList.add('activeStatementBodySize');
+    document.documentElement.scrollTop = 0;
+}
+
+function handleHideMenu() {
+    mobileMenu.classList.remove('activeMobileMenu');
+    menuModalBlur.classList.remove('menuModalBlurActive');
+    body.classList.remove('activeStatementBodySize');
+}
+
+// Product Images Zoom Function:
+
+const mainPhoto = document.querySelector('.mainImg');
+const photoAreaWrapper = document.querySelector('.photoAreaWrapper');
+let isPhotoMenuZoom = false;
+
+mainPhoto.addEventListener('click', (eventInfo) => handleAddZoomImage(eventInfo));
+menuModalBlur.addEventListener('click', (eventInfo) => handleRemoveZoomImage(eventInfo));
+
+function handleAddZoomImage(eventInfo) {
+
+    if(window.screen.width > 1000) {
+        photoAreaWrapper.classList.add('activeProductPhotos');
+        menuModalBlur.classList.add('modalBlurImageMenu');
+        mainPhoto.classList.add('activeMainImage');
+        body.classList.add('activeStatementBodySize');
+        document.documentElement.scrollTop = 0;
+    }
+
+    isPhotoMenuZoom = true;
+}
+
+function handleRemoveZoomImage(eventInfo) {
+
+    if(isPhotoMenuZoom && window.screen.width > 1000) {
+        menuModalBlur.classList.remove('modalBlurImageMenu');
+        mainPhoto.classList.remove('activeMainImage');
+        body.classList.remove('activeStatementBodySize');
+        photoAreaWrapper.classList.remove('activeProductPhotos');
+    }
 }
