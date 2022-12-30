@@ -930,8 +930,8 @@ header {
 
 .activeProductPhotos {
     position: absolute;
-    width: 40%;
-    left: 30%;
+    width: 30%;
+    left: 35%;
     top: 10%;
     z-index: 100001;
 }
