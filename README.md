@@ -4,6 +4,12 @@
 
 <img src="./design/desktop-design.jpg" />
 
+## Functions:
+
+### ● Hover Effects:
+
+<img src="./design/active-states-basket-empty.jpg">
+
 ## Used Techs:
 
 <div>
