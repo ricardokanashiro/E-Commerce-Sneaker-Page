@@ -1,6 +1,6 @@
 # Front End Challenge - E-Commerce Sneaker Page 👟
 
-➨ 🔗Web Preview: [clique aqui!](https://ricardokanashiro.github.io/ECommerceSneakerPage/)
+➨ 🔗Web Preview: [clique aqui!](https://ricardokanashiro.github.io/E-Commerce-Sneaker-Page/)
 
 <img width="70%" src="./design/desktop-design.jpg" />
 
