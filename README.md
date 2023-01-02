@@ -4,7 +4,7 @@
 
 <img width="70%" src="./design/desktop-design.jpg" />
 
-## Functions:
+## Functions ⚙️:
 
 ### ● Hover Effects:
 
@@ -18,12 +18,12 @@
 
 <img src="readmeSrc\Add to Cart Function.gif" width="70%" />
 
-## Responsivity:
+## Responsivity 📱:
 
 <img src="readmeSrc\Responsive Demostration.gif" width="70%">
 <img src="readmeSrc\Mobile Version.gif" width="70%">
 
-## Used Techs:
+## Used Techs 💾:
 
 <div>
     ➦ <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="15px"/>
