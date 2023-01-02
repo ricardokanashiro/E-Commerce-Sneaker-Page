@@ -2,17 +2,26 @@
 
 ➨ 🔗Web Preview: [clique aqui!](https://ricardokanashiro.github.io/ECommerceSneakerPage/)
 
-<img width="70%" style="float: right;" src="./design/desktop-design.jpg" />
+<img width="70%" src="./design/desktop-design.jpg" />
 
 ## Functions:
 
 ### ● Hover Effects:
 
-<img width="70%" style="float: right;" src="./design/active-states-basket-empty.jpg">
+<img width="70%" src="./design/active-states-basket-empty.jpg">
 
-### ● Hover Effects:
+### ● Image Menu Zoom:
 
+<img src="readmeSrc\Image Menu Zoom.gif" width="70%" />
 
+### ● Add Product to Cart:
+
+<img src="readmeSrc\Add to Cart Function.gif" width="70%" />
+
+## Responsivity:
+
+<img src="readmeSrc\Responsive Demostration.gif" width="70%">
+<img src="readmeSrc\Mobile Version.gif" width="70%">
 
 ## Used Techs:
 
