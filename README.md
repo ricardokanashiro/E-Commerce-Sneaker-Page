@@ -2,13 +2,13 @@
 
 ➨ 🔗Web Preview: [clique aqui!](https://ricardokanashiro.github.io/ECommerceSneakerPage/)
 
-<img width="50%" align="center" src="./design/desktop-design.jpg" />
+<img width="70%" style="float: right;" src="./design/desktop-design.jpg" />
 
 ## Functions:
 
 ### ● Hover Effects:
 
-<img width="50%" align="center" src="./design/active-states-basket-empty.jpg">
+<img width="70%" style="float: right;" src="./design/active-states-basket-empty.jpg">
 
 ### ● Hover Effects:
 
